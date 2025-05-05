@@ -1,4 +1,4 @@
-# MCP Sample Stack
+# MCP Server Sample
 
 This repository contains an implementation of a Model Context Protocol (MCP) server for educational purposes. This code demonstrates how to build a functional MCP server that can integrate with various LLM clients.
 

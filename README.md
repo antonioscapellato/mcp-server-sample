@@ -55,8 +55,8 @@ We recommend using uv to manage your Python projects.
 If you haven't created a uv-managed project yet, create one:
 
 ```
-uv init mcp-server-demo
-cd mcp-server-demo
+uv init mcp-server-sample
+cd mcp-server-sample
 ```
 
 Then add MCP to your project dependencies:

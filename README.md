@@ -46,9 +46,75 @@ MCP servers can provide three main types of capabilities:
 - MCP SDK 1.2.0 or higher
 - `uv` package manager
 
+--- 
+
+### Installation
+Adding MCP to your python project
+We recommend using uv to manage your Python projects.
+
+If you haven't created a uv-managed project yet, create one:
+
+```
+uv init mcp-server-demo
+cd mcp-server-demo
+```
+
+Then add MCP to your project dependencies:
+
+```console
+uv add "mcp[cli]
+```
+Alternatively, for projects using pip for dependencies:
+
+```console
+pip install "mcp[cli]"
+```
+
+Running the standalone MCP development tools
+To run the mcp command with uv:
+
+```console
+uv run mcp
+```
+
+### Quickstart
+Let's create a simple MCP server that exposes a calculator tool and some data:
+
+```python
+# server.py
+from mcp.server.fastmcp import FastMCP
+
+# Create an MCP server
+mcp = FastMCP("Demo")
+
+
+# Add an addition tool
+@mcp.tool()
+def add(a: int, b: int) -> int:
+    """Add two numbers"""
+    return a + b
+
+
+# Add a dynamic greeting resource
+@mcp.resource("greeting://{name}")
+def get_greeting(name: str) -> str:
+    """Get a personalized greeting"""
+    return f"Hello, {name}!"
+```
+
+You can install this server in Claude Desktop and interact with it right away by running:
+
+```console
+mcp install server.py
+```
+Alternatively, you can test it with the MCP Inspector:
+
+```console
+mcp dev server.py
+```
+
 Made with ❤️ by [Antonio Scapellato](https://scapellato.dev)
 
----
 
 ## License
 

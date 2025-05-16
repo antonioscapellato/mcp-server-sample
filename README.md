@@ -115,10 +115,16 @@ mcp dev server.py
 
 Made with ❤️ by [Antonio Scapellato](https://scapellato.dev)
 
-### Resources: 
+
+
+
+
+#### Resources: 
 - [Building Agents with Model Context Protocol - Full Workshop with Mahesh Murag of Anthropic](https://www.youtube.com/watch?v=kQmXtrmQ5Zg)
 
 
-## License
 
+
+
+#### License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

@@ -116,7 +116,7 @@ mcp dev server.py
 Made with ❤️ by [Antonio Scapellato](https://scapellato.dev)
 
 ### Resources: 
-- [Building Agents with Model Context Protocol - Full Workshop with Mahesh Murag of Anthropic](https://scapellato.dev](https://www.youtube.com/watch?v=kQmXtrmQ5Zg)
+- [Building Agents with Model Context Protocol - Full Workshop with Mahesh Murag of Anthropic](https://www.youtube.com/watch?v=kQmXtrmQ5Zg)
 
 
 ## License
